@@ -9,6 +9,51 @@
 import UIKit
 
 class ThaiNumberViewController: UIViewController {
+    
+//    Implict
+    var thaiClass = ThaiClass()
+    
+    
+    
+    
+    @IBOutlet weak var numberLabel: UILabel!
+    
+    
+    @IBAction func decButton(_ sender: UIBarButtonItem) {
+        
+        let resultString: String = thaiClass.checkClick(keyString: "Dec")
+        print(resultString)
+        
+        var decIndexInt = thaiClass.indexInt
+        decIndexInt = decIndexInt - 1
+        
+        if decIndexInt < 0 {
+            decIndexInt = thaiClass.numberStrings.count - 1
+        }
+        
+        thaiClass.indexInt = decIndexInt
+        print("Current index ==> \(thaiClass.indexInt)")
+        
+        numberLabel.text = thaiClass.showNumber()
+        
+    }
+    
+    
+    @IBAction func setOneButton(_ sender: UIBarButtonItem) {
+        print(thaiClass.checkClick(keyString: "One"))
+    }
+    
+    
+    
+    @IBAction func incButton(_ sender: UIBarButtonItem) {
+        
+        print(thaiClass.checkClick(keyString: "Inc"))
+        
+        
+        
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,16 +65,5 @@ class ThaiNumberViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+}   // ThaiNumber Class
