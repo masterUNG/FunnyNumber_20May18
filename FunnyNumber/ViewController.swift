@@ -18,6 +18,15 @@ class ViewController: UIViewController {
         
         showClick(nameButton: "decButton")
         
+        let myClass = MyClass()
+        
+        let currentNumberInt: Int = Int(numberLabel.text!)!
+        
+        let resultNumberInt: Int = myClass.decreseNumber(numberInt: currentNumberInt)
+        
+        let resultString: String = String(resultNumberInt)
+        
+        numberLabel.text = resultString
         
     }
     
@@ -26,6 +35,10 @@ class ViewController: UIViewController {
     @IBAction func startOneButton(_ sender: UIBarButtonItem) {
         
         showClick(nameButton: "startOneButton")
+        
+        let myClass = MyClass()
+        
+        numberLabel.text = myClass.setONE()
         
         
     }
@@ -36,6 +49,14 @@ class ViewController: UIViewController {
     @IBAction func incButton(_ sender: UIBarButtonItem) {
         
         showClick(nameButton: "incButton")
+        
+        let myClass = MyClass()
+        
+        let currentNumberString: String = numberLabel.text!
+        
+        let resultString: String = myClass.increaseNumber(numberString: currentNumberString)
+        
+        numberLabel.text = resultString
         
     }
     
