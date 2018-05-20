@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,56 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunnyNumber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jeremy-lapak-550657-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="i9W-BY-WQx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="409-LN-VtQ">
+                                <rect key="frame" x="0.0" y="43" width="375" height="362.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="4" height="4"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4g-AQ-4n4">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="3bQ-sO-E8Y"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="QS3-GI-xgn"/>
+                                    <barButtonItem title="Start One" id="lVZ-jo-LIc"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TaJ-aZ-vRH"/>
+                                    <barButtonItem systemItem="fastForward" id="hKU-pq-nv6"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="409-LN-VtQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1bo-kq-QHX"/>
+                            <constraint firstItem="409-LN-VtQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="2tZ-2e-1GE"/>
+                            <constraint firstItem="409-LN-VtQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LNQ-Qg-IQa"/>
+                            <constraint firstItem="E4g-AQ-4n4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RDk-zz-LWd"/>
+                            <constraint firstItem="E4g-AQ-4n4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c0X-Ik-2T7"/>
+                            <constraint firstItem="i9W-BY-WQx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="foJ-gk-dvC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="409-LN-VtQ" secondAttribute="trailing" id="gHq-0T-QsZ"/>
+                            <constraint firstItem="i9W-BY-WQx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hci-cZ-vCX"/>
+                            <constraint firstItem="i9W-BY-WQx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lAZ-N2-NwX"/>
+                            <constraint firstItem="E4g-AQ-4n4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nTR-UJ-zd7"/>
+                            <constraint firstItem="i9W-BY-WQx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="otv-jz-7uX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="jeremy-lapak-550657-unsplash.jpg" width="577" height="768"/>
+    </resources>
 </document>
