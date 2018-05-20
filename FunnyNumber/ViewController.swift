@@ -10,6 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
     
+//    Explicit
+    var statusBol: Bool = true
+    var labelStrings = ["Auto Run", "Stop Run"]
+    
+    
+    
+    
+    
+    
+    @IBAction func autoRunButton(_ sender: UIBarButtonItem) {
+        
+//        Switch Label
+        if statusBol {
+            showItemButton.title = labelStrings[1]
+        } else {
+            showItemButton.title = labelStrings[0]
+        }
+        
+        statusBol = !statusBol
+        
+        
+    }
+    
+    
+    
+    @IBOutlet weak var showItemButton: UIBarButtonItem!
+    
+    
+    
     
     @IBOutlet weak var numberLabel: UILabel!
     
