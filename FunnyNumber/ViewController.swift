@@ -13,9 +13,27 @@ class ViewController: UIViewController {
 //    Explicit
     var statusBol: Bool = true
     var labelStrings = ["Auto Run", "Stop Run"]
+
+//    Overide func สำเร็จรูป
+    var objTime = Timer()
     
     
     
+    func myRunTimer() -> Void {
+        
+        objTime = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.mySelector), userInfo: nil, repeats: true)
+        
+    }
+    
+    @objc func mySelector() -> Void {
+        
+        var startNumberInt: Int = Int(numberLabel.text!)!
+        
+        startNumberInt = startNumberInt + 1
+        
+        numberLabel.text = String(startNumberInt)
+        
+    }
     
     
     
@@ -24,8 +42,14 @@ class ViewController: UIViewController {
 //        Switch Label
         if statusBol {
             showItemButton.title = labelStrings[1]
+            
+            myRunTimer()
+            
         } else {
             showItemButton.title = labelStrings[0]
+            
+            objTime.invalidate()
+            
         }
         
         statusBol = !statusBol
