@@ -14,6 +14,8 @@
 		C49FC7B720B11C5000FCD8A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49FC7B520B11C5000FCD8A8 /* LaunchScreen.storyboard */; };
 		C49FC7BF20B11D5D00FCD8A8 /* jeremy-lapak-550657-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C49FC7BE20B11D5D00FCD8A8 /* jeremy-lapak-550657-unsplash.jpg */; };
 		C49FC7C120B1271E00FCD8A8 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FC7C020B1271E00FCD8A8 /* MyClass.swift */; };
+		C49FC7C320B134D800FCD8A8 /* ThaiNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FC7C220B134D800FCD8A8 /* ThaiNumberViewController.swift */; };
+		C49FC7C520B1438F00FCD8A8 /* baseline_keyboard_arrow_left_black_18dp.png in Resources */ = {isa = PBXBuildFile; fileRef = C49FC7C420B1438F00FCD8A8 /* baseline_keyboard_arrow_left_black_18dp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C49FC7B820B11C5000FCD8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49FC7BE20B11D5D00FCD8A8 /* jeremy-lapak-550657-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jeremy-lapak-550657-unsplash.jpg"; sourceTree = "<group>"; };
 		C49FC7C020B1271E00FCD8A8 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		C49FC7C220B134D800FCD8A8 /* ThaiNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiNumberViewController.swift; sourceTree = "<group>"; };
+		C49FC7C420B1438F00FCD8A8 /* baseline_keyboard_arrow_left_black_18dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_keyboard_arrow_left_black_18dp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +66,12 @@
 				C49FC7AE20B11C4E00FCD8A8 /* ViewController.swift */,
 				C49FC7B020B11C4E00FCD8A8 /* Main.storyboard */,
 				C49FC7B320B11C5000FCD8A8 /* Assets.xcassets */,
+				C49FC7C420B1438F00FCD8A8 /* baseline_keyboard_arrow_left_black_18dp.png */,
 				C49FC7BE20B11D5D00FCD8A8 /* jeremy-lapak-550657-unsplash.jpg */,
 				C49FC7B520B11C5000FCD8A8 /* LaunchScreen.storyboard */,
 				C49FC7B820B11C5000FCD8A8 /* Info.plist */,
 				C49FC7C020B1271E00FCD8A8 /* MyClass.swift */,
+				C49FC7C220B134D800FCD8A8 /* ThaiNumberViewController.swift */,
 			);
 			path = FunnyNumber;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 				C49FC7B720B11C5000FCD8A8 /* LaunchScreen.storyboard in Resources */,
 				C49FC7B420B11C5000FCD8A8 /* Assets.xcassets in Resources */,
 				C49FC7BF20B11D5D00FCD8A8 /* jeremy-lapak-550657-unsplash.jpg in Resources */,
+				C49FC7C520B1438F00FCD8A8 /* baseline_keyboard_arrow_left_black_18dp.png in Resources */,
 				C49FC7B220B11C4E00FCD8A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +152,7 @@
 				C49FC7AF20B11C4E00FCD8A8 /* ViewController.swift in Sources */,
 				C49FC7AD20B11C4E00FCD8A8 /* AppDelegate.swift in Sources */,
 				C49FC7C120B1271E00FCD8A8 /* MyClass.swift in Sources */,
+				C49FC7C320B134D800FCD8A8 /* ThaiNumberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
