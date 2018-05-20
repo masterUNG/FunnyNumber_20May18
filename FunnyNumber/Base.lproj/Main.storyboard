@@ -32,11 +32,23 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4g-AQ-4n4">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem systemItem="rewind" id="3bQ-sO-E8Y"/>
+                                    <barButtonItem systemItem="rewind" id="3bQ-sO-E8Y">
+                                        <connections>
+                                            <action selector="decButton:" destination="BYZ-38-t0r" id="jtu-O3-F8A"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="QS3-GI-xgn"/>
-                                    <barButtonItem title="Start One" id="lVZ-jo-LIc"/>
+                                    <barButtonItem title="Start One" id="lVZ-jo-LIc">
+                                        <connections>
+                                            <action selector="startOneButton:" destination="BYZ-38-t0r" id="4lS-8A-75N"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="TaJ-aZ-vRH"/>
-                                    <barButtonItem systemItem="fastForward" id="hKU-pq-nv6"/>
+                                    <barButtonItem systemItem="fastForward" id="hKU-pq-nv6">
+                                        <connections>
+                                            <action selector="incButton:" destination="BYZ-38-t0r" id="Hjr-ys-ygk"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -56,6 +68,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="409-LN-VtQ" id="yfn-3z-cJM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

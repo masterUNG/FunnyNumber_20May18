@@ -9,6 +9,45 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var numberLabel: UILabel!
+    
+    
+    @IBAction func decButton(_ sender: UIBarButtonItem) {
+        
+        showClick(nameButton: "decButton")
+        
+        
+    }
+    
+    
+    
+    @IBAction func startOneButton(_ sender: UIBarButtonItem) {
+        
+        showClick(nameButton: "startOneButton")
+        
+        
+    }
+    
+    
+    
+    
+    @IBAction func incButton(_ sender: UIBarButtonItem) {
+        
+        showClick(nameButton: "incButton")
+        
+    }
+    
+    
+    func showClick(nameButton: String) -> Void {
+        print("You Click ==> \(nameButton)")
+    }
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
